@@ -1,0 +1,176 @@
+MECHANISTIC INTERPRETABILITY: DEFINITION ANALYSIS
+============================================================
+
+Analyzed 17 papers
+
+INDIVIDUAL PAPER DEFINITIONS:
+------------------------------------------------------------
+
+
+Sharkey et al. 2025 (297 citations)
+Type: GENERAL
+Key passages:
+
+Bereska & Gavves 2024 (661 citations)
+Type: GENERAL
+Key passages:
+  • algorithms and concepts to provide a granular, causal understanding. We establish foundational concepts such as features encoding knowledge within neural activations and hypotheses about their representation and computation. We survey methodologies for causally
+  • This review explores mechanistic interpretability: reverse engineering the computational
+  • mechanisms and representations learned by neural networks into human-understandable
+
+Conmy et al. 2023 (ACDC) (922 citations)
+Type: GENERAL
+Key passages:
+
+Rai et al. 2024 (225 citations)
+Type: GENERAL
+Key passages:
+
+Saphra & Wiegreffe 2024 (112 citations)
+Type: GENERAL
+Key passages:
+
+Davies & Khakzar 2024 (21 citations)
+Type: GENERAL
+Key passages:
+  • learning, there have been efforts to explain these models’ behavior and understand them internally; and recently, mechanistic interpretability (MI) has emerged as a distinct research area
+  • From Explaining Behavior to Interpreting Representations
+  • How can we understand, interpret, and explain the behavior of complex intelligent biological systems like humans, chimpanzees, dolphins, or (at least seemingly) intelligent AI systems like large language models (LLMs)?
+
+Somvanshi et al. 2026 (34 citations)
+Type: GENERAL
+Key passages:
+
+Chalmers 2025 (48 citations)
+Type: GENERAL
+Key passages:
+  • analyzes an AI system’s input/output behavior to understand what the system is doing. Mechanistic interpretability analyzes an AI systems internal mechanisms to help explain (for theorists) what the system is doing.6
+  • Mechanistic interpretability is the program of explaining what AI systems are doing in
+  • current AI. As I understand it, interpretability (in a broad sense) is the practice of explaining
+
+Lin et al. 2025 (49 citations)
+Type: GENERAL
+Key passages:
+
+Gantla 2025 (45 citations)
+Type: GENERAL
+Key passages:
+
+El et al. 2025 (Attention Graphs) (19 citations)
+Type: GNN
+Key passages:
+
+Xuanyuan et al. 2023 (78 citations)
+Type: GNN
+Key passages:
+
+Kakkad et al. 2023 (Survey) (157 citations)
+Type: GNN
+Key passages:
+
+Schnake et al. 2021 (GNN-LRP) (431 citations)
+Type: GNN
+Key passages:
+
+Lu et al. 2024 (GOAt) (29 citations)
+Type: GNN
+Key passages:
+
+Raj & Mileo 2024 (FSAM) (22 citations)
+Type: GNN
+Key passages:
+
+Panapitiya et al. 2026 (FragNet) (23 citations)
+Type: GNN
+Key passages:
+
+
+============================================================
+THEME CLUSTERS:
+------------------------------------------------------------
+
+REVERSE ENGINEERING:
+  • Bereska & Gavves 2024
+  • Rai et al. 2024
+
+CAUSAL MECHANISMS:
+  • Bereska & Gavves 2024
+
+CIRCUITS COMPUTATIONS:
+  • Bereska & Gavves 2024
+  • Rai et al. 2024
+  • Saphra & Wiegreffe 2024
+  • Davies & Khakzar 2024
+  • Gantla 2025
+  • Kakkad et al. 2023 (Survey)
+
+REPRESENTATIONS FEATURES:
+  • Bereska & Gavves 2024
+  • Rai et al. 2024
+  • Davies & Khakzar 2024
+  • Kakkad et al. 2023 (Survey)
+  • Raj & Mileo 2024 (FSAM)
+
+AI SAFETY ALIGNMENT:
+  • Bereska & Gavves 2024
+  • Chalmers 2025
+  • Kakkad et al. 2023 (Survey)
+
+HUMAN UNDERSTANDABLE:
+  • Bereska & Gavves 2024
+  • Davies & Khakzar 2024
+  • Kakkad et al. 2023 (Survey)
+
+
+============================================================
+SYNTHESIS:
+
+Based on analysis of 17 papers (10 general MI, 7 GNN-specific MI):
+
+CORE DEFINITION CLUSTERS:
+
+1. REVERSE ENGINEERING APPROACH
+   - Neural networks as "black boxes" to be reverse-engineered
+   - Goal: Extract human-understandable algorithms/concepts from weights & activations
+   - Analogy: Similar to understanding computer programs by examining source code
+
+2. CAUSAL-MECHANISTIC EXPLANATIONS
+   - Focus on causal mechanisms linking inputs → internal representations → outputs
+   - Methods: Activation patching, causal interventions, ablation studies
+   - Distinguished from correlational/attribution methods
+
+3. CIRCUIT DISCOVERY
+   - Identify computational subgraphs ("circuits") responsible for specific behaviors
+   - Circuit = connected subset of neurons/attention heads performing coherent function
+   - Examples: Name mover heads, induction heads, function composition circuits
+
+4. REPRESENTATION ANALYSIS
+   - Study what concepts/features are encoded in neural activations
+   - Methods: Probing, feature visualization, sparse autoencoders (SAEs)
+   - Key phenomena: Polysemanticity, superposition
+
+5. AI SAFETY MOTIVATION
+   - Primary driver: Ensure AI systems remain safe/aligned as capabilities grow
+   - Applications: Detect deception, understand goal structures, enable model editing
+   - Distinctive feature: Strong safety orientation vs. other XAI approaches
+
+KEY DISTINCTIONS FROM OTHER XAI:
+- vs. Behavioral XAI: MI examines internals, not just input-output behavior
+- vs. Attribution methods: MI seeks causal mechanisms, not feature importance scores
+- vs. Concept-based XAI: MI focuses on actual computations, not post-hoc concept labels
+
+TOP 5 MOST INFLUENTIAL PAPERS (by citation count):
+1. Conmy et al. 2023 (ACDC) - 922 citations
+   → Automated Circuit Discovery algorithm
+   
+2. Schnake et al. 2021 (GNN-LRP) - 431 citations  
+   → Higher-order explanations via Layer-wise Relevance Propagation for GNNs
+   
+3. Bereska & Gavves 2024 - 661 citations
+   → Comprehensive review connecting MI to AI safety
+   
+4. Sharkey et al. 2025 - 297 citations
+   → Open problems and research directions in MI
+   
+5. Rai et al. 2024 - 225 citations
+   → Practical review focused on transformer LMs
